@@ -1,0 +1,40 @@
+{
+    "meta": {
+        "filename": "sample_02.pdf",
+        "description": "Edital Prefeitura de Bilac - Eletrodomésticos (PE 042/2025)",
+        "complexity": "HIGH"
+    },
+    "expected_output": {
+        "agent_02_structure": {
+            "modalidade": "pregao-eletronico",
+            "numero_edital": "042/2025",
+            "numero_processo": "067/2025",
+            "orgao_emissor": "Prefeitura Municipal de Bilac",
+            "data_abertura": "02/12/2025"
+        },
+        "agent_04_compliance": {
+            "keywords_present": [
+                "FGTS",
+                "CNDT"
+            ],
+            "keywords_absent": []
+        },
+        "agent_05_technical": {
+            "requisitos_esperados": [
+                {
+                    "tipo": "AMOSTRA",
+                    "presente": true
+                },
+                {
+                    "tipo": "NORMA",
+                    "keyword": "ISO",
+                    "presente": true
+                },
+                {
+                    "tipo": "VISITA_TECNICA",
+                    "presente": false
+                }
+            ]
+        }
+    }
+}

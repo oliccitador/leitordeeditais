@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Teste de CORS (BrasilAPI)</h2>
+    <div id="result">Testando...</div>
+    <script>
+        fetch('https://brasilapi.com.br/api/cnpj/v1/20173428000143')
+            .then(r => {
+                if(r.ok) return r.json();
+                throw new Error(r.status);
+            })
+            .then(d => {
+                document.getElementById('result').innerText = 'SUCESSO: ' + JSON.stringify(d);
+                document.getElementById('result').style.color = 'green';
+            })
+            .catch(e => {
+                document.getElementById('result').innerText = 'FALHA CORS/ERRO: ' + e;
+                document.getElementById('result').style.color = 'red';
+            });
+    </script>
+</body>
+</html>

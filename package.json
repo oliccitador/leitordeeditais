@@ -1,0 +1,56 @@
+{
+  "name": "licitador-blindado",
+  "version": "1.0.0",
+  "description": "Sistema de análise automática de licitações públicas com arquitetura multi-agentes",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@prisma/client": "6.19.1",
+    "canvas": "^3.2.0",
+    "date-fns": "^3.3.1",
+    "dotenv": "^17.2.3",
+    "form-data": "^4.0.5",
+    "lru-cache": "^10.2.0",
+    "next": "^14.1.0",
+    "node-fetch": "^3.3.2",
+    "openai": "^6.10.0",
+    "pdf-lib": "^1.17.1",
+    "pdf-parse": "^1.1.1",
+    "pdf2pic": "^3.2.0",
+    "pdfkit": "^0.17.2",
+    "puppeteer": "^21.11.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-pdf": "^7.7.0",
+    "sharp": "^0.33.2",
+    "tesseract.js": "^5.0.4",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.15.3",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.1",
+    "@types/node": "^25.0.1",
+    "@types/react": "^18.3.27",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.1.0",
+    "jest": "^29.7.0",
+    "postcss": "^8.4.35",
+    "prisma": "6.19.1",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

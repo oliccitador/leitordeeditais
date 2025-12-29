@@ -1,0 +1,55 @@
+--- ANALISE MANUAL IA ---
+
+[AGENTE 2 - ESTRUTURA]
+Modalidade/Num: Pregão Eletrônico nº 138/2025
+Órgão (provável): Secretaria de Administração 
+Unidade de Suprimentos 
+ 
+
+Data Abertura: Não encontrado
+
+[AGENTE 4 - HABILITAÇÃO - KEYWORDS]
+- Regularidade Fiscal: NÃO DETECTADO
+- Qualificação Técnica: DETECTADO
+- Qualificação Econômico-Financeira: NÃO DETECTADO
+- FGTS: DETECTADO
+- CNDT: DETECTADO
+- Balanço Patrimonial: NÃO DETECTADO
+
+[AGENTE 3 - ITENS - AMOSTRA]
+Não detectei itens com regex simples
+
+[AGENTE 5 - TÉCNICO]
+- Atestado de Capacidade: NÃO DETECTADO
+- Visita Técnica: NÃO DETECTADO
+- Amostra: DETECTADO
+- Laudo: NÃO DETECTADO
+- ISO: DETECTADO
+- ABNT: NÃO DETECTADO
+
+[PREVIEW TEXTO INICIAL]
+
+
+   Prefeitura Municipal de Americana 
+Secretaria de Administração 
+Unidade de Suprimentos 
+ 
+1 
+Pregão Eletrônico nº 138/2025 
+ 
+ 
+PROCESSO N.º 10.504/2025 
+PREGÃO ELETRÔNICO Nº 138/2025 
+Torna-se público que a Prefeitura Municipal de Americana, realizará licitação visando o REGISTRO 
+DE PREÇOS, conforme modalidade, forma, critério de julgamento e modo de disputa indicados no 
+quadro   abaixo,   nos   termos   da   Lei   nº   14.133/2021,   do   Decreto   Municipal   nº 13.826/2023, 
+https://www.americana.sp.gov.br/legislacao/decreto_13826_2025.html,  aplicando,  no  que  couber, 
+subsidiariamente  o  Decreto  Federal  nº  11.462/2023,  e  demais  legislação  aplicável  e,  ainda,  de 
+acordo com as condições estabelecidas neste Edital. 
+Modalidade e Forma Pregão Eletrônico 
+Apresentação de Proposta 
+Até 08/12/2025 às 07:30h (horário de Brasília) 
+Abertura da licitação 
+08/12/2025 às 08:30h (horário de Brasília) 
+Critério de Julgamento Menor Preço Unitário por Item          
+Modo de 

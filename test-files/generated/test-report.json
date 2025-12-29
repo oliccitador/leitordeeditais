@@ -1,0 +1,360 @@
+{
+  "timestamp": "2025-12-13T23:24:54.055Z",
+  "duration": 630,
+  "summary": {
+    "total": 15,
+    "passed": 10,
+    "failed": 2,
+    "skipped": 0,
+    "errors": 3,
+    "successRate": "66.7"
+  },
+  "results": [
+    {
+      "testName": "PDF Real - Alta Qualidade (Texto Nativo)",
+      "status": "PASS",
+      "details": {
+        "chars": 89004,
+        "pages": 53,
+        "quality": "100%",
+        "qualityDecimal": "1.00",
+        "bannerShouldShow": "NÃO",
+        "checks": [
+          {
+            "name": "Texto extraído > 1000 chars",
+            "pass": true
+          },
+          {
+            "name": "Qualidade OCR >= 80%",
+            "pass": true
+          },
+          {
+            "name": "Conversão decimal correta",
+            "pass": true
+          },
+          {
+            "name": "Banner NÃO deve aparecer",
+            "pass": true
+          }
+        ]
+      }
+    },
+    {
+      "testName": "PDF Real - Múltiplas Páginas",
+      "status": "PASS",
+      "details": {
+        "pages": 53,
+        "avgQuality": "100%",
+        "qualityDecimal": "1.00",
+        "checks": [
+          {
+            "name": "Múltiplas páginas detectadas",
+            "pass": true
+          },
+          {
+            "name": "Qualidade média calculada",
+            "pass": true
+          },
+          {
+            "name": "Conversão para decimal",
+            "pass": true
+          }
+        ]
+      }
+    },
+    {
+      "testName": "PDF Sintético - Somente Texto (100% qualidade)",
+      "status": "ERROR",
+      "details": "bad XRef entry"
+    },
+    {
+      "testName": "PDF Sintético - Baixa Qualidade (~30%)",
+      "status": "ERROR",
+      "details": "bad XRef entry"
+    },
+    {
+      "testName": "PDF Sintético - Qualidade Mista (~50%)",
+      "status": "FAIL",
+      "details": {
+        "quality": "80%",
+        "qualityDecimal": "0.80",
+        "bannerShouldShow": "NÃO",
+        "checks": [
+          {
+            "name": "PDF gerado com sucesso",
+            "pass": true
+          },
+          {
+            "name": "Qualidade média (~50%)",
+            "pass": false
+          },
+          {
+            "name": "Decimal ~0.5",
+            "pass": false
+          }
+        ]
+      }
+    },
+    {
+      "testName": "PDF Sintético - Vazio (0% qualidade)",
+      "status": "ERROR",
+      "details": "bad XRef entry"
+    },
+    {
+      "testName": "Conversão de Escala - 100% → 1.0",
+      "status": "PASS",
+      "details": {
+        "input": 100,
+        "output": 1,
+        "display": "100%",
+        "checks": [
+          {
+            "name": "100 / 100 = 1.0",
+            "pass": true
+          },
+          {
+            "name": "Banner NÃO aparece (>= 0.5)",
+            "pass": true
+          },
+          {
+            "name": "Exibição: 100%",
+            "pass": true
+          }
+        ]
+      }
+    },
+    {
+      "testName": "Conversão de Escala - 50% → 0.5",
+      "status": "PASS",
+      "details": {
+        "input": 50,
+        "output": 0.5,
+        "display": "50%",
+        "checks": [
+          {
+            "name": "50 / 100 = 0.5",
+            "pass": true
+          },
+          {
+            "name": "Banner no limite (= 0.5)",
+            "pass": true
+          },
+          {
+            "name": "Exibição: 50%",
+            "pass": true
+          }
+        ]
+      }
+    },
+    {
+      "testName": "Conversão de Escala - 0% → 0.0",
+      "status": "PASS",
+      "details": {
+        "input": 0,
+        "output": 0,
+        "display": "0%",
+        "checks": [
+          {
+            "name": "0 / 100 = 0.0",
+            "pass": true
+          },
+          {
+            "name": "Banner DEVE aparecer (< 0.5)",
+            "pass": true
+          },
+          {
+            "name": "Exibição: 0%",
+            "pass": true
+          }
+        ]
+      }
+    },
+    {
+      "testName": "Conversão de Escala - Edge Cases",
+      "status": "FAIL",
+      "details": {
+        "checks": [
+          {
+            "name": "null → 0",
+            "pass": true,
+            "actual": 0
+          },
+          {
+            "name": "undefined → 0",
+            "pass": true,
+            "actual": 0
+          },
+          {
+            "name": "-1 → 0",
+            "pass": false,
+            "actual": -0.01
+          },
+          {
+            "name": "101 → 1.01",
+            "pass": true,
+            "actual": 1.01
+          },
+          {
+            "name": "45.7 → 0.457",
+            "pass": true,
+            "actual": 0.457
+          }
+        ]
+      }
+    },
+    {
+      "testName": "ContextOptimizer - Documento Grande (>100k chars)",
+      "status": "PASS",
+      "details": {
+        "originalSize": 140000,
+        "optimizedSize": 35000,
+        "reduction": "75.0%",
+        "checks": [
+          {
+            "name": "Texto original > 100k",
+            "pass": true
+          },
+          {
+            "name": "Texto otimizado <= 35k",
+            "pass": true
+          },
+          {
+            "name": "Redução significativa",
+            "pass": true
+          }
+        ]
+      }
+    },
+    {
+      "testName": "ContextOptimizer - Extração de Datas",
+      "status": "PASS",
+      "details": {
+        "foundKeywords": 5,
+        "keywords": [
+          "data",
+          "prazo",
+          "abertura",
+          "publicação",
+          "envio"
+        ],
+        "checks": [
+          {
+            "name": "Encontrou \"data\"",
+            "pass": true
+          },
+          {
+            "name": "Encontrou \"prazo\"",
+            "pass": true
+          },
+          {
+            "name": "Encontrou \"abertura\"",
+            "pass": true
+          },
+          {
+            "name": "Encontrou >= 3 keywords",
+            "pass": true
+          }
+        ]
+      }
+    },
+    {
+      "testName": "ContextOptimizer - Priorização de Keywords",
+      "status": "PASS",
+      "details": {
+        "priorities": {
+          "datas": 1,
+          "estrutura": 2,
+          "identificacao": 3,
+          "valores": 3,
+          "itens": 3,
+          "habilitacao": 3
+        },
+        "checks": [
+          {
+            "name": "Datas têm prioridade 1",
+            "pass": true
+          },
+          {
+            "name": "Estrutura tem prioridade 2",
+            "pass": true
+          },
+          {
+            "name": "Outras têm prioridade 3",
+            "pass": true
+          }
+        ]
+      }
+    },
+    {
+      "testName": "Frontend - Visibilidade do Banner",
+      "status": "PASS",
+      "details": {
+        "checks": [
+          {
+            "name": "Quality 1 → Banner NÃO",
+            "pass": true,
+            "actual": false
+          },
+          {
+            "name": "Quality 0.8 → Banner NÃO",
+            "pass": true,
+            "actual": false
+          },
+          {
+            "name": "Quality 0.5 → Banner NÃO",
+            "pass": true,
+            "actual": false
+          },
+          {
+            "name": "Quality 0.49 → Banner SIM",
+            "pass": true,
+            "actual": true
+          },
+          {
+            "name": "Quality 0.3 → Banner SIM",
+            "pass": true,
+            "actual": true
+          },
+          {
+            "name": "Quality 0 → Banner SIM",
+            "pass": true,
+            "actual": true
+          }
+        ]
+      }
+    },
+    {
+      "testName": "Frontend - Exibição de Qualidade",
+      "status": "PASS",
+      "details": {
+        "checks": [
+          {
+            "name": "1 → \"100%\"",
+            "pass": true,
+            "actual": "100%"
+          },
+          {
+            "name": "0.85 → \"85%\"",
+            "pass": true,
+            "actual": "85%"
+          },
+          {
+            "name": "0.5 → \"50%\"",
+            "pass": true,
+            "actual": "50%"
+          },
+          {
+            "name": "0.3 → \"30%\"",
+            "pass": true,
+            "actual": "30%"
+          },
+          {
+            "name": "0 → \"0%\"",
+            "pass": true,
+            "actual": "0%"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+    "meta": {
+        "filename": "sample_01.pdf",
+        "description": "Edital Prefeitura de Americana (PE 138/2025)",
+        "complexity": "MEDIUM"
+    },
+    "expected_output": {
+        "agent_02_structure": {
+            "modalidade": "pregao-eletronico",
+            "numero_edital": "138/2025",
+            "numero_processo": "10.504/2025",
+            "orgao_emissor": "Prefeitura Municipal de Americana",
+            "data_abertura": "17/09/2025"
+        },
+        "agent_04_compliance": {
+            "keywords_present": [
+                "FGTS",
+                "CNDT"
+            ],
+            "keywords_absent": []
+        },
+        "agent_05_technical": {
+            "requisitos_esperados": [
+                {
+                    "tipo": "AMOSTRA",
+                    "presente": false
+                },
+                {
+                    "tipo": "NORMA",
+                    "keyword": "ISO",
+                    "presente": false
+                },
+                {
+                    "tipo": "VISITA_TECNICA",
+                    "presente": false
+                }
+            ]
+        }
+    }
+}
