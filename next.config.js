@@ -11,7 +11,7 @@ const nextConfig = {
   },
 
   // Configuração para Netlify
-  // output: 'standalone',
+  output: 'standalone',
 
   // Webpack customizado para bibliotecas de OCR e PDF
   webpack: (config, { isServer }) => {
